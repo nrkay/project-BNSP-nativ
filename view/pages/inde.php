@@ -9,27 +9,57 @@
 </head>
 
 <body>
+  <!-- membuat table -->
 
-  <?php
-  require_once '../../Server/config.php';
-  $query = "SELECT * FROM brides";
-  $result = mysqli_query($conn, $query);
-  echo "<table>";
-  echo "<tr><th>ID</th><th>Nama</th><th>Alamat</th></tr>";
+  <div class="relative overflow-x-auto">
+    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+      <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+        <tr>
+          <th scope="col" class="px-6 py-3">
+            Name
+          </th>
+          <th scope="col" class="px-6 py-3">
+            Address
+          </th>
+          <th scope="col" class="px-6 py-3">
+            Action
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php
+        require_once '../../Server/config.php';
+        $query = "SELECT * FROM brides";
+        $result = mysqli_query($conn, $query);
+        while ($item = mysqli_fetch_assoc($result)) { ?>
+          <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+              <?php echo $item["Name"]; ?>
+            </th>
+            <td class="px-6 py-4 ">
+              Silver
+            </td>
+            <td class="px-6 py-4">
+              Laptop
+            </td>
+            <td class="px-6 py-4 flex">
+              <a href="../Logic/delete.php?id=<?php echo $item["id"]; ?>" onclick="return confirm('delete Data?');">
+                <button class="mr-2">delete</button>
+              </a>
+              <button>edit</button>
+            </td>
+          </tr>
+        <?php } ?>
+      </tbody>
 
-  while ($row = mysqli_fetch_assoc($result)) {
-    echo "<tr>";
-    echo "<td>" . $row["id"] . "</td>";
-    echo "<td>" . $row["Name"] . "</td>";
-    echo "<td>" . $row["Address"] . "</td>";
-    echo "</tr>";
-  }
+      </tbody>
+    </table>
+  </div>
 
-  echo "</table>";
-  ?>
+  <!-- end membuat table -->
   <!-- create nav -->
 
-  <nav class="navbar">
+  <!-- <nav class="navbar">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <a href="#" class="flex items-center">
         <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo" />
@@ -51,7 +81,6 @@
               <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
               </svg></button>
-            <!-- Dropdown menu -->
             <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
               <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                 <li>
@@ -82,7 +111,7 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> -->
 
   <!-- end nav -->
 </body>
