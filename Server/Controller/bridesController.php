@@ -1,5 +1,14 @@
 <?php
 require_once '../Models/brides.php';
+
+// fetch data dari database
+$row = mysqli_fetch_assoc($result);
+while ($row = mysqli_fetch_assoc($result)) {
+    $id = $row["id"];
+}
+
+var_dump($id);
+
 // echo "<table>";
 // echo "<tr><th>ID</th><th>Nama</th><th>Alamat</th></tr>";
 

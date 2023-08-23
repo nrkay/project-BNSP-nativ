@@ -11,7 +11,7 @@
 <body>
 
   <?php
-  require_once './Models/brides.php';
+  require_once '../../Server/config.php';
   $query = "SELECT * FROM brides";
   $result = mysqli_query($conn, $query);
   echo "<table>";
