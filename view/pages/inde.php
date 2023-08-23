@@ -46,7 +46,9 @@
               <a href="../Logic/delete.php?id=<?php echo $item["id"]; ?>" onclick="return confirm('delete Data?');">
                 <button class="mr-2">delete</button>
               </a>
-              <button>edit</button>
+              <a href="../Logic/edit.php?id=<?php echo $item["id"]; ?>" onclick="return confirm('edit Data?');">
+                <button class="mr-2">edit</button>
+              </a>
             </td>
           </tr>
         <?php } ?>
