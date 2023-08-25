@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="view/style/index.css">
     <title>Weeding IT</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -26,13 +26,13 @@
                 <div class="col-lg-3">
                     <div class="row">
                         <div class="col-4">
-                            <img src="../../view/style/assets/fb.png" alt="">
+                            <img src="view/style/assets/fb.png" alt="">
                         </div>
                         <div class="col-4">
-                            <img src="../../view/style/assets/ig.png" alt="">
+                            <img src="view/style/assets/ig.png" alt="">
                         </div>
                         <div class="col-4">
-                            <img src="../../view/style/assets/wa.png" alt="">
+                            <img src="view/style/assets/wa.png" alt="">
                         </div>
                     </div>
                 </div>

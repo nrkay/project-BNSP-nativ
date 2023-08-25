@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="view/style/index.css">
     <title>Weeding IT</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -27,7 +27,7 @@
                 <div class="mt-4">
                     <div class="row">
                         <?php
-                        require_once '../../Server/config.php';
+                        require_once 'Server/config.php';
                         $query = "SELECT * FROM profil_company";
                         $result = mysqli_query($conn, $query);
                         while ($item = mysqli_fetch_assoc($result)) {
@@ -41,7 +41,7 @@
                             </div>
                             <div class="profit-company col-6">
                                 <p><?php echo $item["information"] ?></p>
-                                <a href="../../view/pages/galery.php" class="text-decoration-none px-4 py-2 btn-galery rounded">See Our Galery</a>
+                                <a href="view/pages/galery.php" class="text-decoration-none px-4 py-2 btn-galery rounded">See Our Galery</a>
                             </div>
 
                     </div>
@@ -61,7 +61,7 @@
                         ?>
                             <div class="card-img-galery m-3 rounded">
                                 <div class="">
-                                    <img class="" src="../../view/dashboard/admin/images/assets/<?php echo $data['filename']; ?>" alt="" style="height: 350px; width: 250px; object-fit: cover;">
+                                    <img class="" src="view/dashboard/admin/images/assets/<?php echo $data['filename']; ?>" alt="" style="height: 350px; width: 250px; object-fit: cover;">
                                 </div>
                             </div>
                         <?php } ?>

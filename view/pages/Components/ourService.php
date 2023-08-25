@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="view/style/index.css">
     <title>Weeding IT</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -29,7 +29,7 @@
             <div class="container text-center mt-5 d-flex justify-content-center">
                 <div class="row d-flex justify-content-center">
                     <?php
-                    require_once '../../Server/config.php';
+                    require_once 'Server/config.php';
                     $query = "SELECT * FROM produk";
                     $result = mysqli_query($conn, $query);
                     while ($item = mysqli_fetch_assoc($result)) {
