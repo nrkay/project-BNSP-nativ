@@ -15,18 +15,30 @@ Welcome to the **Khairiyah's Wedding Organizer** project repository. This reposi
 **banner**
 ![Alt Text](./README-Assets/banner.jpeg)
 **Budget Management:**
+![Alt Text](./README-Assets/ourService.jpeg)
 **Gallery**
+![Alt Text](./README-Assets/gallery.jpeg)
 **Client Management:**
+![Alt Text](./README-Assets/client.jpeg)
 **Contact Us:**
+![Alt Text](./README-Assets/contactUs.jpeg)
+**Login**
+![Alt Text](./README-Assets/login.jpeg)
 
 ## Frontend Dashboard Admin
 
 **Client Management:**
+![Alt Text](./README-Assets/Client_Management.jpeg)
 **insert and edit Management:**
-**Customizable Views:**
+![Alt Text](./README-Assets/Client_Management_edit_add.jpeg)
+**Customizable Views:**Client_Management
+![Alt Text](./README-Assets/Customizable_Views.jpeg)
 **insert and edit Customizable Views:**
+![Alt Text](./README-Assets/Customizable_View2.jpeg)
 **Client Gallery:**
+![Alt Text](./README-Assets/image.jpeg)
 **insert and edit Gallery:**
+![Alt Text](./README-Assets/contactUs.jpeg)
 
 ## Getting Started
 
