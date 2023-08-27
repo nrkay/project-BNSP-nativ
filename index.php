@@ -117,26 +117,26 @@
     </div>
     <!-- end section ourService -->
 
-    <!-- section join us -->
+    <!-- section About us -->
     <div class="aboutUs" id="aboutUs">
         <?php include('view/pages/Components/aboutUs.php'); ?>
 
     </div>
-    <!-- end join us -->
+    <!-- end about us -->
 
-    <!-- section invitation -->
+    <!-- section partner -->
     <div class="viewData" id="partner">
         <?php include('view/pages/Components/viewData.php'); ?>
 
     </div>
-    <!-- end section invitation -->
+    <!-- end section partner -->
 
-    <!-- section invitation -->
+    <!-- section contact us -->
     <div class="contactUs" id="contactUs">
         <?php include('view/pages/Components/contactUs.php'); ?>
 
     </div>
-    <!-- end section invitation -->
+    <!-- end section contact us -->
 
 
 
