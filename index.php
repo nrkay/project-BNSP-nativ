@@ -75,7 +75,7 @@
     <!-- section nav -->
     <nav class="navbar navbar-expand-lg text-light">
         <div class="container login">
-            <a class="button-login text-decoration-none bg-light px-3 py-2 rounded" href="../../view/dashboard/admin/" style="color: #B85B45">
+            <a class="button-login text-decoration-none bg-light px-3 py-2 rounded" href="view/dashboard/admin/" style="color: #B85B45">
                 Login Admin
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

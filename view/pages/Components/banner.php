@@ -19,8 +19,8 @@
 
 <body>
     <!-- section banner -->
-    <div class="banner bg-danger ">
-        <img src="view/style/assets/bg.png" class="bg-danner" alt="">
+    <div class="banner">
+        <img src="view/style/assets/banner.jpg" class="bg-danner" alt="" style=" filter: blur(2px);">
         <div class="content-banner ">
             <div class="container text-center">
                 <div class="banner-row row d-flex justify-content-center align-items-center">

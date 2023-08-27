@@ -32,14 +32,14 @@
                         $result = mysqli_query($conn, $query);
                         while ($item = mysqli_fetch_assoc($result)) {
                         ?>
-                            <div class="col-6">
+                            <div class="col-lg-6 col-12">
                                 <div class="row">
                                     <div class="profit-company col-8">
                                         <h1><?php echo $item["profit"] ?></h1>
                                     </div>
                                 </div>
                             </div>
-                            <div class="profit-company col-6">
+                            <div class="profit-company col-lg-6 col-12">
                                 <p><?php echo $item["information"] ?></p>
                                 <a href="view/pages/galery.php" class="text-decoration-none px-4 py-2 btn-galery rounded">See Our Galery</a>
                             </div>
@@ -54,12 +54,14 @@
             <!-- menampilkan 3 gambar terbaru -->
             <div class="bg-light">
                 <div class="text-center">
-                    <div class="d-flex flex-row justify-content-center mt-5 mx-5" style="  transform: translateY(-80px);">
+                    <div class="row justify-content-center mt-5 mx-5" style="  transform: translateY(-80px);">
+                        <!-- <div class="d-flex flex-row justify-content-center mt-5 mx-5" style="  transform: translateY(-80px);"> -->
                         <?php $Queryimage = "SELECT * FROM image ORDER BY filename DESC LIMIT 4";
                         $images = mysqli_query($conn, $Queryimage);
                         while ($data = mysqli_fetch_assoc($images)) {
                         ?>
-                            <div class="card-img-galery m-3 rounded">
+                            <div class="col-lg-3 col-6">
+                                <!-- <div class="card-img-galery m-3 rounded"> -->
                                 <div class="">
                                     <img class="" src="view/dashboard/admin/images/assets/<?php echo $data['filename']; ?>" alt="" style="height: 350px; width: 250px; object-fit: cover;">
                                 </div>
